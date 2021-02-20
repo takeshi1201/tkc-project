@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tkc:::Portfoilo</title>
+  <link rel="icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="loader.css">
+  <script src="scripts/vendors/pace.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/vendors/bootstrap-reboot.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="global-container">
+    <div id="container">
+      <aside class="side left">
+        <div class="side__inner">
+          <a class="twitter icon tween-animate-title" href="https://twitter.com/taketora0019">Twitter</a>
+          <a class="Qitta  tween-animate-title" href="https://qiita.com/taketora0019">Qitta</a>
+        </div>
+      </aside>
+      <div class="mobile-menu__cover"></div>
+      <div class="nav-trigger"></div>
+      <header class="header">
+        <div class="header__inner appear up">
+          <div class="logo item">
+            <a href="/" class="logo__link">
+              <img src="./images/tkc-logo.svg" alt="ホームページのログ" class="logo__img" />
+            </a>
+            <div class="logo__text">
+              お問い合わせどうぞ！！！！！！！！
+            </div>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__ul ">
+              <li class="header__li item"><a href="/">Service</a></li>
+              <li class="header__li item">
+                <a class="btn filled" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="mobile-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+      <section class="contact">
+        <div class="contact__inner">
+          <div class="contact__head">
+            <h2 class="util-title">CONTACT</h2>
+          </div>
+          <form id="js-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdn6UVdZqn8_WZC4y-1MnTTDXv3ECZHxu1MHq_UuaPgigMNYw/formResponse" method="post">
+            <p class="contact__text">
+              <span class="contact__inline">＊</span>
+              は入力必須項目です
+            </p>
+            <dl class="contact__list">
+              <div class="contact__item">
+                <dt class="contact__title">
+                  名前
+                  <span class="contact__inline">＊</span>
+                </dt>
+                <dd class="contact__input">
+                  <input type="text"  name="entry.552241472" required>
+                </dd>
+              </div>
+              <div class="contact__item">
+                <dt class="contact__title">
+                  メールアドレス
+                  <span class="contact__inline">＊</span>
+                </dt>
+                <dd class="contact__input">
+                  <input type="email"  name="emailAddress" required>
+                </dd>
+              </div>
+              <div class="contact__item">
+                <dt class="contact__title">
+                  お問い合わせ内容
+                  <span class="contact__inline">＊</span>
+                </dt>
+                <dd class="contact__input">
+                  <textarea type="text"  name="entry.1843723398" required></textarea>
+                </dd>
+              </div>
+            </dl>
+            <div class="contact__submit">
+              <button class="btn solid" type="submit">送信</button>
+            </div>
+          </form>
+        </div>
+        <div id="js-sucees" class="contact__message">
+          <p>送信完了しました。ありがとうございました。</p>
+        </div>
+        <div id="js-error" class="contact__message -error">
+          <p>送信に失敗しました。ページを更新して再度送信してください。</p>
+        </div>
+        
+      </section>
+      <aside class="side right">
+        <div class="side__inner">
+          <span class="tween-animate-title">&copy;code tttkkkccc</span>
+        </div>
+      </aside>
+      <footer class="footer appear up">
+        <div class="footer__inner">
+          <ul class="footer__ul">
+            <li class="footer__li item"><a href="/">SERVICE</a></li>
+            <li class="footer__li item">
+              <a href="/">
+                <img src="./images/tkc-logo.svg" alt="ホームページのログ">
+              </a>
+            </li>
+            <li class="footer__li item"><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="footer__copyright item">
+          &copy; code tttkkkccc
+        </div>
+      </footer>
+    </div>
+    <nav class="mobile-menu">
+      <div class="logo">
+        <img src="./images/tkc-logo.svg" alt="" class="logo__img" />
+      </div>
+      <ul class="mobile-menu__main">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">
+            <span class="main-title">Service</span>
+            <span class="sub-title">サービスについて</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">
+            <span class="main-title">Contact </span>
+            <span class="sub-title">コンタクト</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/libs/contact.js"></script>
+  <script src="scripts/vendors/scroll-polyfill.js"></script>
+  <script src="scripts/libs/hover-animation.js"></script>
+  <script src="scripts/libs/text-animation.js"></script>
+  <script src="scripts/libs/mobile-menu.js"></script>
+  <script src="scripts/libs/scroll.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
