@@ -1,0 +1,133 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.font-sm {
+  font-size: 16px;
+}
+.font-md {
+  font-size: 19px;
+}
+.font-lr {
+  font-size: 23px;
+}
+.font-lg {
+  font-size: 36px;
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+.mb-md {
+  margin-bottom: 40px !important;
+}
+
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+
+.header {
+  .logo {
+    position: relative;
+    &__text {
+      display: block !important;
+    }
+
+    &__text {
+      width: 340px;
+      height: auto;
+      border: solid 5px #707070;
+      border-radius: 0px 5px 5px 5px;
+      padding: 5px;
+      visibility: hidden;
+      opacity: 0;
+      transition: all .5s;
+      position: absolute;
+      top: 150%;
+      left: 100%;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        top: -30px;
+        left: -28px;
+        display: block;
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid #707070;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        transform-origin: left top;
+        transform: skewX(40deg);
+      }
+
+      &::after {
+        content: " ";
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid #fff;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        transform-origin: left top;
+        transform: skewX(40deg);
+      }
+    }
+    &__link.inview {
+
+      & + .logo__text {
+        opacity: 1;
+        visibility: visible;
+    }
+    }
+
+  }
+}
+
+.home {
+
+  &__logo  {
+    & > img {
+      width: 220px;
+    }
+  }
+
+  &__name {
+    &::before {
+      transform: translateY(10px);
+    }
+  }
+}
+
+.side {
+  top: 40%;
+
+  &.right {
+    &.inview {
+      right: 8%;
+    }
+  }
+  &.left {
+    &.inview {
+      left: 8%;
+    }
+  }
+}
+
+.footer {
+  @extend.mb-md ;
+}
+
+.contact {
+
+  &__title {
+    &::after {
+      border-width: 16px 7px 17px 0;
+    }
+  }
+}
+

@@ -1,0 +1,90 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+.font-lr {
+  font-size: 20px;
+}
+.pt-lg {
+  padding-top: 150px;
+}
+.pt-ll {
+  padding-top: 200px;
+}
+
+.mobile-menu__btn {
+  display: none;
+}
+
+.navHeight{
+  height: 150px;
+}
+
+
+.content-width {
+  width: 60%;
+}
+
+
+.header {
+
+  &__nav {
+    display: block;
+  }
+
+  &__li {
+
+    & > a {
+      @extend .font-lr;
+      text-transform: uppercase;
+    }
+  }
+
+  & .logo {
+    & img {
+      width: 79px;
+      height: 79px;
+    }
+  }
+}
+
+.home {
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+    text-align: center;
+    
+  }
+
+  &__body {
+    flex: 0 0 50%;
+  }
+
+  &__text {
+    padding:24px 0;
+  }
+}
+
+#logo {
+  fill:url(#gradient1);
+  width: 200px;
+  height: 100%;
+}
+
+.side {
+  display: block;
+}
+
+.contact {
+  @extend .pt-ll;
+}
+
+
