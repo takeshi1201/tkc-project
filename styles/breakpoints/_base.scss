@@ -242,6 +242,7 @@ img {
   transform: translateY(-50%);
   color: $cSubText;
   transition: all 1.5s;
+  z-index: 50;
 
   & a,
   & span {
@@ -249,6 +250,7 @@ img {
     margin: 0 20px;
     vertical-align: middle;
     letter-spacing: 2px;
+    position: relative;
   }
 
   &.left {

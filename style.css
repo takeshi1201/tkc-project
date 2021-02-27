@@ -600,6 +600,7 @@ img {
   transform: translateY(-50%);
   color: #707070;
   transition: all 1.5s;
+  z-index: 50;
 }
 
 .side a,
@@ -608,6 +609,7 @@ img {
   margin: 0 20px;
   vertical-align: middle;
   letter-spacing: 2px;
+  position: relative;
 }
 
 .side.left {

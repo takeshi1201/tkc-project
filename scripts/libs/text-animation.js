@@ -2,7 +2,8 @@
 // set up text to print, each item in array is new line
 let aText = new Array(
   "2019年9月からプログラミングスクールに通い、現在、SESとして現場で働いてます。",
-  "現場の経験としては、Javaアプリケーションのテストお客様のQA対応などの業務をしてきました。"
+  "現場の経験としては、Javaアプリケーションのテストやお客様のQA対応などの業務をしてきました。",
+  "どうぞよろしくお願いします！！"
 );
 let iSpeed = 100; // time delay of print out ⇨プリントアウトの時間遅延
 let iIndex = 0; // start printing array at this posision⇨この位置でアレイの印刷を開始します
@@ -34,6 +35,5 @@ function typewriter() {
   setTimeout("typewriter()", iSpeed);
  }
 }
-
 
 typewriter();
