@@ -656,7 +656,7 @@ img {
 }
 
 .icon.twitter::before {
-  background-image: url(/images/twitter.svg);
+  background-image: url(./images/twitter.svg);
 }
 
 .contact {
