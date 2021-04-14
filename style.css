@@ -371,7 +371,7 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 body {
-  font-family: 'Alegreya','Noto Serif JP',serif;
+  font-family: "Alegreya", "Noto Serif JP", serif;
 }
 
 ul {
@@ -397,11 +397,11 @@ img {
   font-size: 16px;
 }
 
-.font-lg, .main-title, .contact__head > .util-title, .home__name {
+.font-lg, .main-title, .util-title, .home__name {
   font-size: 25px;
 }
 
-.mb-sm {
+.mb-sm, .service-item__img {
   margin-bottom: 16px !important;
 }
 
@@ -417,6 +417,10 @@ img {
   padding-top: 8px;
 }
 
+.pt-lg, .home__inner {
+  padding-top: 100px;
+}
+
 .pb-sm, .contact__text, .contact__input {
   padding-bottom: 16px !important;
 }
@@ -425,21 +429,17 @@ img {
   padding-bottom: 80px !important;
 }
 
-.pt-lg, .home__inner {
-  padding-top: 80px;
-}
-
 .navHeight, .header {
   height: 100px;
 }
 
-.content-width, .header__inner, .footer__inner, .home__inner, .contact__inner {
+.content-width, .header__inner, .footer__inner, .home__inner, .service__inner, .contact__inner {
   width: 68.5%;
   margin: 0 auto;
   max-width: 1070px;
 }
 
-.main-title, .contact__head > .util-title {
+.main-title, .util-title {
   font-weight: 600;
   text-align: center;
 }
@@ -462,6 +462,32 @@ img {
   width: 1.3em;
 }
 
+/*-共通部分
+=========================================================*/
+.util-title {
+  color: #707070;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.util-title::before, .util-title::after {
+  content: "";
+  height: 3px;
+  background: #063FA8;
+  flex-grow: 1;
+}
+
+.util-title::before {
+  margin-right: 12px;
+}
+
+.util-title::after {
+  margin-left: 12px;
+}
+
+/*-header
+=========================================================*/
 .header {
   position: fixed;
   top: 0;
@@ -500,7 +526,6 @@ img {
 
 .header__li > a {
   color: black;
-  text-decoration: none !important;
   text-transform: uppercase;
 }
 
@@ -524,6 +549,8 @@ img {
   display: none;
 }
 
+/*-footer
+=========================================================*/
 .footer__inner {
   margin-bottom: 40px;
 }
@@ -548,6 +575,8 @@ img {
   text-align: center;
 }
 
+/*-home
+=========================================================*/
 .home {
   position: relative;
   padding-top: 79px;
@@ -593,6 +622,37 @@ img {
   height: 200px;
 }
 
+/*-service
+=========================================================*/
+.service {
+  padding-top: 30px;
+}
+
+.service__title {
+  padding: 40px 0;
+}
+
+.service-item {
+  padding-bottom: 30px;
+}
+
+.service-item__img {
+  border: 1px solid #e8e8e8;
+  padding: 1px;
+}
+
+.service-item__text dt {
+  font-weight: 900 !important;
+  color: #063FA8;
+}
+
+.service-item__inline {
+  font-size: 10px;
+  color: #E7728E;
+}
+
+/*-side
+=========================================================*/
 .side {
   display: none;
   position: fixed;
@@ -638,6 +698,8 @@ img {
   transform: rotate(90deg);
 }
 
+/*-icon
+=========================================================*/
 .icon {
   position: relative;
 }
@@ -659,16 +721,14 @@ img {
   background-image: url(./images/twitter.svg);
 }
 
-.contact {
-  padding-top: 100px;
-}
-
+/*-contact
+=========================================================*/
 .contact input[type="text"],
 .contact input[type="email"],
 .contact textarea {
   width: 100%;
   border: none;
-  padding: .2em .5em;
+  padding: 0.2em 0.5em;
   box-shadow: 5px 6px 16px rgba(96, 96, 96, 0.16);
   border-radius: 2px;
 }
@@ -680,28 +740,6 @@ img {
 
 .contact__head {
   padding: 40px 0;
-}
-
-.contact__head > .util-title {
-  color: #707070;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-.contact__head > .util-title::before, .contact__head > .util-title::after {
-  content: '';
-  height: 3px;
-  background: #063FA8;
-  flex-grow: 1;
-}
-
-.contact__head > .util-title::before {
-  margin-right: 12px;
-}
-
-.contact__head > .util-title::after {
-  margin-left: 12px;
 }
 
 .contact__text {
@@ -716,7 +754,7 @@ img {
   color: white;
   background-color: #063FA8;
   display: inline;
-  padding: .2em .8em;
+  padding: 0.2em 0.8em;
   position: relative;
 }
 
@@ -769,20 +807,11 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .font-lr, .header__li > a {
     font-size: 20px;
   }
-  .pt-lg, .home__inner {
-    padding-top: 150px;
-  }
-  .pt-ll, .contact {
-    padding-top: 200px;
-  }
   .mobile-menu__btn {
     display: none;
   }
   .navHeight, .header {
     height: 150px;
-  }
-  .content-width, .header__inner, .footer__inner, .home__inner, .contact__inner {
-    width: 60%;
   }
   .header__nav {
     display: block;
@@ -836,7 +865,7 @@ Stylesheet: 960px以上のモニタで適用
   .font-lr, .header__li > a {
     font-size: 23px;
   }
-  .font-lg, .main-title, .contact__head > .util-title, .home__name {
+  .font-lg, .main-title, .util-title, .home__name {
     font-size: 36px;
   }
   .mb-lg, .home, .contact {
@@ -866,6 +895,8 @@ Stylesheet: 960px以上のモニタで適用
     position: absolute;
     top: 150%;
     left: 100%;
+    color: #fff;
+    background-color: #707070;
   }
   .header .logo__text::before {
     content: " ";
@@ -889,7 +920,7 @@ Stylesheet: 960px以上のモニタで適用
     margin: 0 auto;
     width: 0;
     height: 0;
-    border-bottom: 30px solid #fff;
+    border-bottom: 30px solid #707070;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     transform-origin: left top;
@@ -905,6 +936,13 @@ Stylesheet: 960px以上のモニタで適用
   .home__name::before {
     transform: translateY(10px);
   }
+  .service-item__img {
+    overflow: hidden;
+  }
+  .service-item__img .scale-js.inview img {
+    transform: scale(1.3, 1.3);
+    transition: all .5s;
+  }
   .side {
     top: 40%;
   }
@@ -913,6 +951,9 @@ Stylesheet: 960px以上のモニタで適用
   }
   .side.left.inview {
     left: 8%;
+  }
+  .contact {
+    padding-top: 40px;
   }
   .contact__title::after {
     border-width: 16px 7px 17px 0;
@@ -925,11 +966,31 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
-  .content-width, .header__inner, .footer__inner, .home__inner, .contact__inner {
+  .content-width, .header__inner, .footer__inner, .home__inner, .service__inner, .contact__inner {
     width: 50%;
   }
   #logo {
     width: 240px;
+  }
+  .service-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    padding-bottom: 0;
+  }
+  .service-item__img {
+    border: none;
+    width: 400px;
+  }
+  .service-item__img img {
+    max-width: 400px;
+    max-height: 300px;
+    -ms-interpolation-mode: bicubic;
+  }
+  .service-item__text {
+    padding: 10px;
   }
   .side {
     top: 50%;

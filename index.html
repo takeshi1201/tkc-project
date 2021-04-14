@@ -27,7 +27,7 @@
       <header class="header">
         <div class="header__inner appear up">
           <div class="logo item">
-            <a href="./index.html" class="logo__link">
+            <a href="#home-js" id="" class="logo__link">
               <img src="./images/tkc-logo.svg" alt="ホームページのログ" class="logo__img" />
             </a>
             <div class="logo__text">
@@ -37,9 +37,11 @@
           </div>
           <nav class="header__nav">
             <ul class="header__ul ">
-              <li class="header__li item"><a href="./index.html">Service</a></li>
               <li class="header__li item">
-                <a class="btn filled" href="./contact.html">Contact</a>
+                <a href="#service-js" id="">Service</a>
+              </li>
+              <li class="header__li item">
+                <a href="#contact-js" id="" class="btn filled" >Contact</a>
               </li>
             </ul>
           </nav>
@@ -51,7 +53,7 @@
         </div>
       </header>
 
-      <section class="home">
+      <section id="home-js" class="home">
         <div class="home__inner">
           <div class="home__logo">
             <?xml version="1.0" encoding="UTF-8"?>
@@ -137,6 +139,159 @@
           </div>
         </div>
       </section>
+      <section id="service-js" class="service">
+        <div class="service__inner">
+          <div class="service__title">
+            <h2 class="util-title">SERVICE</h2>
+          </div>
+          <div class="service__items">
+            <div class="service-item">
+              <div class="service-item__img">
+                <a href="#" class="scale-js">
+                  <img src="./images/tkc___Profile.png" alt="本ページ画像">
+              </a>
+              </div>
+              <div class="service-item__text appear right">
+                <dl>
+                  <dl>
+                    <dt class="item">言語</dt>
+                    <dd>HTML&CSS JavaScript jquery</dd>
+                  </dl>
+                  <dl>
+                    <dt class="item">作成期間</dt>
+                    <dd>１週間</dd>
+                  </dl>
+                  <dl>
+                    <dt class="item">仕様・機能</dt>
+                    <dd>モバイルファースト仕様でコーディング</dd>
+                  </dl>
+                  <dl>
+                    <dt class="item">ソースコード</dt>
+                    <dd>https://github.com/takeshi1201/tkc-project.git</dd>
+                  </dl>
+                </dl>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item__img">
+                <a href="http://tkcblog70.xsrv.jp/index.html" class="scale-js">
+                    <img src="./images/TAKESHI_KODAMA.png" alt="作品１の画像">
+                </a>
+              </div>
+              <div class="service-item__text appear up">
+                <dl>
+                  <dl>
+                    <dt class="item">言語</dt>
+                    <dd>HTML&CSS JavaScript</dd>
+                  </dl>
+                  <dl>
+                    <dt class="item">作成期間</dt>
+                    <dd>１週間</dd>
+                  </dl>
+                  <dl>
+                    <dt class="item">仕様・機能</dt>
+                    <dd>Canvasのテンプレートを使用し、作成</dd>
+                  </dl>
+                  <dl>
+                    <dt class="item">ソースコード</dt>
+                    <dd>なし</dd>
+                  </dl>
+                  <dl>
+                    <dt class="item">公開</dt>
+                    <dd>http://tkcblog70.xsrv.jp/index.html</dd>
+                  </dl>
+                </dl>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item__img">
+                <a href="https://chatbot-17265.firebaseapp.com/" class="scale-js">
+                  <img src="./images/Chat-Bot.png" alt="作品２の画像">
+                </a>
+              </div>
+              <div class="service-item__text appear down">
+                <dl>
+                  <dl>
+                    <dt class="item">言語</dt>
+                    <dd>HTML&CSS React(JavaScript) TypeScript</dd>
+                  </dl>
+                  <dl>
+                    <dt class="item">作成期間</dt>
+                    <dd>２週間</dd>
+                  </dl>
+                  <dl>
+                    <dt class="item">仕様・機能</dt>
+                    <dd>youtubeのとらゼミさんの動画を元に作成</dd>
+                  </dl>
+                  <dl>
+                    <dt class="item">ソースコード</dt>
+                    <dd>https://github.com/takeshi1201/React-ChatBot.git</dd>
+                  </dl>
+                  <dl>
+                    <dt class="item">firebaseにて公開</dt>
+                    <dd>https://chatbot-17265.firebaseapp.com/
+                      <br>
+                    <span class="service-item__inline">※チャットボットです。</span>
+                    </dd>
+                  </dl>
+                </dl>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section id="contact-js" class="contact">
+        <div class="contact__inner">
+          <div class="contact__head">
+            <h2 class="util-title">CONTACT</h2>
+          </div>
+          <form id="js-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdn6UVdZqn8_WZC4y-1MnTTDXv3ECZHxu1MHq_UuaPgigMNYw/formResponse" method="post">
+            <p class="contact__text">
+              <span class="contact__inline">＊</span>
+              は入力必須項目です
+            </p>
+            <dl class="contact__list">
+              <div class="contact__item">
+                <dt class="contact__title">
+                  名前
+                  <span class="contact__inline">＊</span>
+                </dt>
+                <dd class="contact__input">
+                  <input type="text"  name="entry.552241472" required>
+                </dd>
+              </div>
+              <div class="contact__item">
+                <dt class="contact__title">
+                  メールアドレス
+                  <span class="contact__inline">＊</span>
+                </dt>
+                <dd class="contact__input">
+                  <input type="email"  name="emailAddress" required>
+                </dd>
+              </div>
+              <div class="contact__item">
+                <dt class="contact__title">
+                  お問い合わせ内容
+                  <span class="contact__inline">＊</span>
+                </dt>
+                <dd class="contact__input">
+                  <textarea type="text"  name="entry.1843723398" required></textarea>
+                </dd>
+              </div>
+            </dl>
+            <div class="contact__submit">
+              <button class="btn solid" type="submit">送信</button>
+            </div>
+          </form>
+        </div>
+        <div id="js-sucees" class="contact__message">
+          <p>送信完了しました。ありがとうございました。</p>
+        </div>
+        <div id="js-error" class="contact__message -error">
+          <p>送信に失敗しました。ページを更新して再度送信してください。</p>
+        </div>
+      </section>
       <aside class="side right">
         <div class="side__inner">
           <span class="tween-animate-title">&copy;code tttkkkccc</span>
@@ -165,13 +320,13 @@
       </div>
       <ul class="mobile-menu__main">
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="./index.html">
+          <a href="#service-js" id="" class="mobile-menu__link">
             <span class="main-title">Service</span>
             <span class="sub-title">サービスについて</span>
           </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="./contact.html">
+          <a href="#contact-js" id="" class="mobile-menu__link">
             <span class="main-title">Contact </span>
             <span class="sub-title">コンタクト</span>
           </a>
@@ -180,6 +335,7 @@
     </nav>
   </div> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/libs/scroll-menu.js"></script>
   <script src="scripts/libs/contact.js"></script>
   <script src="scripts/vendors/scroll-polyfill.js"></script>
   <script src="scripts/libs/hover-animation.js"></script>

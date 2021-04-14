@@ -7,12 +7,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 .font-lr {
   font-size: 20px;
 }
-.pt-lg {
-  padding-top: 150px;
-}
-.pt-ll {
-  padding-top: 200px;
-}
 
 .mobile-menu__btn {
   display: none;
@@ -21,12 +15,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 .navHeight{
   height: 150px;
 }
-
-
-.content-width {
-  width: 60%;
-}
-
 
 .header {
 
@@ -61,7 +49,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   &__logo {
     display: block;
     text-align: center;
-    
   }
 
   &__body {
@@ -83,8 +70,5 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   display: block;
 }
 
-.contact {
-  @extend .pt-ll;
-}
 
 

@@ -11,6 +11,33 @@ Stylesheet: 1280px以上のモニタで適用
   width: 240px;
 }
 
+.service {
+
+  &-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    padding-bottom: 0;
+
+    &__img {
+      border: none;
+      width: 400px;
+
+      & img {
+        max-width: 400px;
+        max-height: 300px;
+        -ms-interpolation-mode: bicubic;
+      }
+    }
+
+    &__text {
+      padding: 10px;
+    }
+  }
+}
+
 .side {
   top: 50%;
 
