@@ -261,9 +261,9 @@ img {
   }
 }
 
-/*-service
+/*-product
 =========================================================*/
-.service {
+.product {
   padding-top: 30px;
 
   &__inner {
@@ -279,11 +279,10 @@ img {
     &__img {
       border: 1px solid #e8e8e8;
       padding: 1px;
-      @extend .mb-sm ;
+      @extend .mb-sm;
     }
 
     &__text {
-
       & dt {
         font-weight: 900 !important;
         color: $cMain;

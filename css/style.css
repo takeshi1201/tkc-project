@@ -401,7 +401,7 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .service-item__img {
+.mb-sm, .product-item__img {
   margin-bottom: 16px !important;
 }
 
@@ -433,7 +433,7 @@ img {
   height: 100px;
 }
 
-.content-width, .header__inner, .footer__inner, .home__inner, .service__inner, .contact__inner {
+.content-width, .header__inner, .footer__inner, .home__inner, .product__inner, .contact__inner {
   width: 68.5%;
   margin: 0 auto;
   max-width: 1070px;
@@ -622,31 +622,31 @@ img {
   height: 200px;
 }
 
-/*-service
+/*-product
 =========================================================*/
-.service {
+.product {
   padding-top: 30px;
 }
 
-.service__title {
+.product__title {
   padding: 40px 0;
 }
 
-.service-item {
+.product-item {
   padding-bottom: 30px;
 }
 
-.service-item__img {
+.product-item__img {
   border: 1px solid #e8e8e8;
   padding: 1px;
 }
 
-.service-item__text dt {
+.product-item__text dt {
   font-weight: 900 !important;
   color: #063FA8;
 }
 
-.service-item__inline {
+.product-item__inline {
   font-size: 10px;
   color: #E7728E;
 }
@@ -936,10 +936,10 @@ Stylesheet: 960px以上のモニタで適用
   .home__name::before {
     transform: translateY(10px);
   }
-  .service-item__img {
+  .product-item__img {
     overflow: hidden;
   }
-  .service-item__img .scale-js.inview img {
+  .product-item__img .scale-js.inview img {
     overflow: hidden;
     transform: scale(1.3, 1.3);
     transition: all .5s;
@@ -967,13 +967,13 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
-  .content-width, .header__inner, .footer__inner, .home__inner, .service__inner, .contact__inner {
+  .content-width, .header__inner, .footer__inner, .home__inner, .product__inner, .contact__inner {
     width: 50%;
   }
   #logo {
     width: 240px;
   }
-  .service-item {
+  .product-item {
     width: 100%;
     max-width: 1000px;
     display: flex;
@@ -983,22 +983,22 @@ Stylesheet: 1280px以上のモニタで適用
     border-radius: 10px;
     padding: 10px;
   }
-  .service-item__img {
+  .product-item__img {
     width: calc(100% - 300px);
     border: none;
     width: 400px;
   }
-  .service-item__img .scale-js.inview img {
+  .product-item__img .scale-js.inview img {
     overflow: hidden;
     transform: scale(1.3, 1.3);
     transition: all .5s;
   }
-  .service-item__img img {
+  .product-item__img img {
     max-width: 400px;
     max-height: 300px;
     -ms-interpolation-mode: bicubic;
   }
-  .service-item__text {
+  .product-item__text {
     width: 300px;
     padding: 10px;
   }
